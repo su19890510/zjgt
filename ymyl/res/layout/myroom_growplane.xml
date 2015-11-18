@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_color"
+>
+    
+     <LinearLayout 
+     android:id="@+id/bottom_layout"
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical" 
+        >
+         <TextView android:id="@+id/choose_mer_tital" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/top_text_style"
+        android:text="成长计划"/>  
+         
+          
+   
+      
+           
+          <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"       
+            android:paddingBottom="1dip"
+            android:paddingTop="1dip"
+            android:background="#ffffff"
+             >
+           
+            <TextView
+                android:id="@+id/myroom_growup_myclass"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="bottom|center"
+                android:text="我的课程"               
+                android:textSize="15sp"
+                android:textColor="@color/tab_text"
+               android:background="@drawable/frage_item_line" 
+                />
+
+            <TextView
+                android:id="@+id/myroom_growup_rank"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="bottom|center"
+                android:text="排行榜"             
+                android:textSize="15sp"
+                android:textColor="@color/type_back"
+               android:background="@null"
+            >
+           </TextView>
+          
+             <TextView
+                android:id="@+id/myroom_growup_type"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="bottom|center"
+                android:text="分类"             
+                android:textSize="15sp"
+                android:textColor="@color/type_back"
+               android:background="@null"
+            />
+              <TextView
+                android:id="@+id/myroom_growup_search"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="bottom|center"
+                android:text="搜索"             
+                android:textSize="15sp"
+                android:textColor="@color/type_back"
+               android:background="@null"
+            />
+        </LinearLayout>
+           
+  
+
+         <android.support.v4.view.ViewPager
+	        android:id="@+id/myroom_growup_pager"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+         >
+    </android.support.v4.view.ViewPager>
+   
+   
+         
+         
+       
+
+    </LinearLayout>
+    
+
+</RelativeLayout>

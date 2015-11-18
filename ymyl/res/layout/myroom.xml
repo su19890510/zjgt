@@ -1,0 +1,338 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_color"
+    android:orientation="vertical"
+>
+
+ <TextView android:id="@+id/choose_mer_tital" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/top_text_style"
+        android:text="@string/myroom_title"/>
+
+ <ScrollView
+     android:id="@+id/scrollView1"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent" >
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical" >
+
+         <ImageView
+             android:id="@+id/myroom_head"
+             android:layout_width="100dp"
+             android:layout_height="100dp"
+             android:layout_marginTop="10dp"
+             android:src="@drawable/headdefault" 
+             android:layout_gravity="center"/>
+         
+         
+       <RelativeLayout
+	        android:id="@+id/myroom_detail"
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dp"      
+	        android:clickable="true"
+	        android:layout_marginTop="15dip"      
+	        android:background="@drawable/item_pressed"      
+        >
+        
+       <TextView
+           android:id="@+id/myroom_detail1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="20dp"
+           android:text="个人简介"
+           android:textColor="#202020"
+           android:textSize="16sp" />
+
+          <ImageView
+                android:id="@+id/row_img_05"
+            	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"  
+        		android:layout_marginRight="10dip"      	     	
+        		android:scaleType="matrix"
+        		android:layout_centerVertical="true"
+        		android:layout_alignParentRight="true"
+        		android:contentDescription="@string/app_name"      		
+        		android:src="@drawable/mm_submenu_normal" />
+          </RelativeLayout>
+          
+       <RelativeLayout
+           android:id="@+id/myroom_member"
+           android:layout_width="fill_parent"
+           android:layout_height="50dp"
+           android:layout_marginTop="1dip"
+           android:background="@drawable/item_pressed"
+           android:clickable="true" >
+        
+       <TextView
+           android:id="@+id/card_text1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="20dp"
+           android:text="团队成员"
+           android:textColor="#202020"
+           android:textSize="16sp" />
+
+          <ImageView
+                android:id="@+id/row_img_051"
+            	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"  
+        		android:layout_marginRight="10dip"      	     	
+        		android:scaleType="matrix"
+        		android:layout_centerVertical="true"
+        		android:layout_alignParentRight="true"
+        		android:contentDescription="@string/app_name"      		
+        		android:src="@drawable/mm_submenu_normal" />
+          </RelativeLayout>
+          
+          <!-- begin -->
+       
+        <RelativeLayout
+            android:id="@+id/myroom_chat"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dip"
+            android:background="@drawable/item_pressed"
+            android:clickable="true" >
+        
+       <TextView
+           android:id="@+id/card_text11"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="20dp"
+           android:text="通讯录"
+           android:textColor="#202020"
+           android:textSize="16sp" />
+
+          <ImageView
+                android:id="@+id/row_img_0511"
+            	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"  
+        		android:layout_marginRight="10dip"      	     	
+        		android:scaleType="matrix"
+        		android:layout_centerVertical="true"
+        		android:layout_alignParentRight="true"
+        		android:contentDescription="@string/app_name"      		
+        		android:src="@drawable/mm_submenu_normal" />
+          </RelativeLayout>
+          <!-- end -->
+        
+        
+        
+        
+        <!-- begin -->
+
+           <RelativeLayout
+               android:id="@+id/myroom_task_apply"
+               android:layout_width="fill_parent"
+               android:layout_height="50dp"
+               android:layout_marginTop="16dp"
+               android:background="@drawable/item_pressed"
+               android:clickable="true" >
+        
+		       <TextView
+		           android:id="@+id/card_text111"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:layout_centerVertical="true"
+		           android:layout_marginLeft="20dp"
+		           android:text="参与的任务"
+		           android:textColor="#202020"
+		           android:textSize="16sp" />
+
+		          <ImageView
+		                android:id="@+id/row_img_05111"
+		            	android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"  
+		        		android:layout_marginRight="10dip"      	     	
+		        		android:scaleType="matrix"
+		        		android:layout_centerVertical="true"
+		        		android:layout_alignParentRight="true"
+		        		android:contentDescription="@string/app_name"      		
+		        		android:src="@drawable/mm_submenu_normal" />
+          </RelativeLayout>
+          
+           <!-- end -->
+              <!-- begin -->
+
+           <RelativeLayout
+               android:id="@+id/myroom_task_save"
+               android:layout_width="fill_parent"
+               android:layout_height="50dp"
+               android:layout_marginTop="1dp"
+               android:background="@drawable/item_pressed"
+               android:clickable="true" >
+        
+		       <TextView
+		           android:id="@+id/card_text1111"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:layout_centerVertical="true"
+		           android:layout_marginLeft="20dp"
+		           android:text="收藏的任务"
+		           android:textColor="#202020"
+		           android:textSize="16sp" />
+
+		          <ImageView
+		                android:id="@+id/row_img_051111"
+		            	android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"  
+		        		android:layout_marginRight="10dip"      	     	
+		        		android:scaleType="matrix"
+		        		android:layout_centerVertical="true"
+		        		android:layout_alignParentRight="true"
+		        		android:contentDescription="@string/app_name"      		
+		        		android:src="@drawable/mm_submenu_normal" />
+          </RelativeLayout>
+          
+           <!-- end -->
+              <!-- begin -->
+
+           <RelativeLayout
+               android:id="@+id/myroom_task_publish"
+               android:layout_width="fill_parent"
+               android:layout_height="50dp"
+               android:layout_marginTop="1dp"
+               android:background="@drawable/item_pressed"
+               android:clickable="true" >
+        
+		       <TextView
+		           android:id="@+id/card_text11111"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:layout_centerVertical="true"
+		           android:layout_marginLeft="20dp"
+		           android:text="发布任务"
+		           android:textColor="#202020"
+		           android:textSize="16sp" />
+
+		          <ImageView
+		                android:id="@+id/row_img_0511111"
+		            	android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"  
+		        		android:layout_marginRight="10dip"      	     	
+		        		android:scaleType="matrix"
+		        		android:layout_centerVertical="true"
+		        		android:layout_alignParentRight="true"
+		        		android:contentDescription="@string/app_name"      		
+		        		android:src="@drawable/mm_submenu_normal" />
+          </RelativeLayout>
+          
+           <!-- end -->
+           
+           
+           
+           <!-- begin -->
+
+           <RelativeLayout
+               android:id="@+id/myroom_achieve"
+               android:layout_width="fill_parent"
+               android:layout_height="50dp"
+               android:layout_marginTop="16dp"
+               android:background="@drawable/item_pressed"
+               android:clickable="true" >
+        
+		       <TextView
+		           android:id="@+id/card_text1113"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:layout_centerVertical="true"
+		           android:layout_marginLeft="20dp"
+		           android:text="成就"
+		           android:textColor="#202020"
+		           android:textSize="16sp" />
+
+		          <ImageView
+		                android:id="@+id/row_img_051113"
+		            	android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"  
+		        		android:layout_marginRight="10dip"      	     	
+		        		android:scaleType="matrix"
+		        		android:layout_centerVertical="true"
+		        		android:layout_alignParentRight="true"
+		        		android:contentDescription="@string/app_name"      		
+		        		android:src="@drawable/mm_submenu_normal" />
+          </RelativeLayout>
+          
+           <!-- end -->
+              <!-- begin -->
+
+           <RelativeLayout
+               android:id="@+id/myroom_grow_plane"
+               android:layout_width="fill_parent"
+               android:layout_height="50dp"
+               android:layout_marginTop="1dp"
+               android:background="@drawable/item_pressed"
+               android:clickable="true" >
+        
+		       <TextView
+		           android:id="@+id/card_text11112"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:layout_centerVertical="true"
+		           android:layout_marginLeft="20dp"
+		           android:text="成长计划"
+		           android:textColor="#202020"
+		           android:textSize="16sp" />
+
+		          <ImageView
+		                android:id="@+id/row_img_0511112"
+		            	android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"  
+		        		android:layout_marginRight="10dip"      	     	
+		        		android:scaleType="matrix"
+		        		android:layout_centerVertical="true"
+		        		android:layout_alignParentRight="true"
+		        		android:contentDescription="@string/app_name"      		
+		        		android:src="@drawable/mm_submenu_normal" />
+          </RelativeLayout>
+          
+           <!-- end -->
+           
+           
+             <!-- begin -->
+
+           <RelativeLayout
+               android:id="@+id/myroom_set"
+               android:layout_width="fill_parent"
+               android:layout_height="50dp"
+               android:layout_marginTop="1dp"
+               android:background="@drawable/item_pressed"
+               android:clickable="true" >
+        
+		       <TextView
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:layout_centerVertical="true"
+		           android:layout_marginLeft="20dp"
+		           android:text="设置"
+		           android:textColor="#202020"
+		           android:textSize="16sp" />
+
+		          <ImageView
+		            	android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"  
+		        		android:layout_marginRight="10dip"      	     	
+		        		android:scaleType="matrix"
+		        		android:layout_centerVertical="true"
+		        		android:layout_alignParentRight="true"
+		        		android:contentDescription="@string/app_name"      		
+		        		android:src="@drawable/mm_submenu_normal" />
+          </RelativeLayout>
+          
+           <!-- end -->
+           
+       
+     </LinearLayout>
+
+ </ScrollView>
+   
+</LinearLayout>

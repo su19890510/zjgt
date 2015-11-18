@@ -1,0 +1,51 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.su.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+         <activity
+            android:label="@string/app_name"
+            android:name="com.su.activity.MissPreferentialActivity" 
+            android:screenOrientation="portrait" 
+            >
+             <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            </activity>
+        <activity android:name="com.su.activity.TabShow"
+             android:screenOrientation="portrait"></activity>
+        <activity android:name="com.su.activity.RecActivity"/>
+        <activity android:name="com.su.login.activity.LoginIndexActivity"/>
+        <activity android:name="com.su.login.activity.RegisterActivity"/>
+        <activity android:name="com.su.login.activity.LoginAcitvity"/>
+        <activity android:name="com.su.myroom.activity.MyRoomActivity"/>
+        <activity android:name="com.su.myroom.activity.MyArchiveActivity"/>
+        <activity android:name="com.su.myroom.activity.MyGrowUpPlaneActivity"/>
+        <activity android:name="com.su.myroom.activity.MyMemberActivity"/>
+        <activity android:name="com.su.myroom.activity.MyMessageActivity"/>
+        <activity android:name="com.su.myroom.activity.MyPartTaskActivity"/>
+        <activity android:name="com.su.myroom.activity.MyPublishTaskActivity"/>
+        <activity android:name="com.su.myroom.activity.MySaveTaskActivity"/>
+        <activity android:name="com.su.myroom.activity.MySetOtherActivity"/>
+        <activity android:name="com.su.project.ProjectActivity"/>
+        <activity android:name="com.su.des.DesActivity"/>
+        <activity android:name="com.su.match.MatchActivity"/>
+        <activity android:name="com.su.login.activity.ForgetPasswordActivity"/>
+                
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+     
+
+</manifest>
